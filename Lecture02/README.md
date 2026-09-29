@@ -1,7 +1,8 @@
-Scenario						Prediction before test			Actual observation			Did it match? Why?
-A. Both tasks at priority 1				Both execute				Both execute at the same time
-B. Task A priority 2; Task B priority 1			B executes first			Both execute				No measurable difference
-C. Task A priority 1; Task B priority 2			A executes first			Both execute				No measurable difference
+| Scenario | Prediction before test | Actual observation | Did it match? Why? |
+|---|---|---|---|
+| A. Both tasks at priority 1 | Both execute | Both execute at the same time | |
+| B. Task A priority 2; Task B priority 1 | B executes first | Both execute | No measurable difference |
+| C. Task A priority 1; Task B priority 2 | A executes first | Both execute | No measurable difference |
 
 
 Starvation:
