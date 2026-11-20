@@ -9,11 +9,11 @@ ESP32-S3, 220ohm resistor and an LED connected to pin 4.
 A timer interrupt happens every 100 ms. Each interrupt gets a number (1, 2, 3, ...) and tries to put it in a queue that holds 4 numbers. If the queue is full, that number is thrown away, but the next interrupt still gets the next number.
 A task takes numbers from the queue, prints them, and then waits before taking the next one.
 
-# Prediction for run A (task waits 20 ms)
+### Prediction for run A (task waits 20 ms)
 
 All numbers are printed in order. The task is faster than the interrupts, so the queue never fills up.
 
-# Prediction for run B (task waits 500 ms)
+### Prediction for run B (task waits 500 ms)
 
 The queue will fill up. Ten numbers come in every second, but the task takes only two. After about half a second the queue is full and numbers start being thrown away.
 
